@@ -1,0 +1,12 @@
+{
+  "name": "redux-async-action-unit-test",
+  "version": "1.0.0",
+  "description": "redux async action unit test",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/timmyLan/redux-async-action-unit-test.git",
+    "type": "git"
+  },
+  "author": "llan",
+  "license": "MIT"
+}
