@@ -459,6 +459,6 @@ script
 
 参考资料
 ---
-[http://cn.redux.js.org/docs/recipes/WritingTests.html](http://cn.redux.js.org/docs/recipes/WritingTests.html)
-[https://github.com/wheresrhys/fetch-mock](https://github.com/wheresrhys/fetch-mock)
+* [http://cn.redux.js.org/docs/recipes/WritingTests.html](http://cn.redux.js.org/docs/recipes/WritingTests.html)
+* [https://github.com/wheresrhys/fetch-mock](https://github.com/wheresrhys/fetch-mock)
 
