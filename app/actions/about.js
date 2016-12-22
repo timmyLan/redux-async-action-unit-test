@@ -11,26 +11,36 @@ export const CHANGE_START = 'CHANGE_START';
 export const CHANGE_ABOUT = 'CHANGE_ABOUT';
 
 const fetchStateUrl = '/api/about';
-
+/**
+ * 异步获取about
+ * method get
+ */
 exports.fetchAbout = ()=> {
     return async(dispatch)=> {
+        // 初始化about
         dispatch(aboutRequest());
-        try {
+        try {//成功则执行aboutSucceed
             let response = await fetch(fetchStateUrl);
             let data = await response.json();
             return dispatch(aboutSucceed(data));
-        } catch (e) {
+        } catch (e) {//失败则执行aboutFailed
             return dispatch(aboutFailed());
         }
     }
 };
-
+/**
+ * 改变start
+ * value 星数
+ */
 exports.changeStart = (value)=> ({
     type: CHANGE_START,
     value: value,
     error: Validators.changeStart(value)
 });
-
+/**
+ * 异步改变about
+ * method post
+ */
 exports.changeAbout = ()=> {
     return async(dispatch)=> {
         try {

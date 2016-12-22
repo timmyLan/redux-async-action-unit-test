@@ -7,14 +7,7 @@ var webpack = require('webpack');
 var path = require('path');
 module.exports = {
     name: 'run test webpack',
-    devtool: 'inline-source-map',
-    externals: {
-        cheerio: 'window',
-        'react/lib/ExecutionEnvironment': true,
-        'react/addons': true,
-        'react/lib/ReactContext': true,
-        fs: '{}'
-    },
+    devtool: 'inline-source-map', //Source Maps
     module: {
         loaders: [
             {
@@ -26,10 +19,15 @@ module.exports = {
                 loader: 'babel'
             }
         ],
-        preLoaders: [{
+        preLoaders: [{ //在webpackK打包前用isparta-instrumenter记录编译前文件,精准覆盖率
             test: /\.jsx|.js$/,
             include: [path.resolve('app/')],
             loader: 'isparta'
-        }]
+        }],
+        plugins: [
+            new webpack.DefinePlugin({
+                'process.env.NODE_ENV': JSON.stringify('test')
+            })
+        ]
     }
 };
