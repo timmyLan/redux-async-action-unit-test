@@ -453,6 +453,21 @@ script
 ```
 测试结果
 ![testInfo.png](http://ohumzw01d.bkt.clouddn.com/testInfo.png)
+
+持续集成
+---
+* [Travis-cli](https://travis-ci.org/)
+    * 与`Github`进行绑定
+    * 每次push执行`npm test`进行测试
+由于Travis默认测试Ruby项目,所以在根目录下添加`.travis.yml`文件
+```
+language: node_js #项目标注为javascript(nodeJs)
+node_js: '6' #nodeJs版本
+sudo: true
+cache: yarn #yarn缓存目录 $HOME/.yarn-cache
+```
+可以到 [http://shields.io/](http://shields.io/) 制作属于该项目的小图标 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
+
 项目地址
 ---
 [https://github.com/timmyLan/redux-async-action-unit-test](https://github.com/timmyLan/redux-async-action-unit-test)
