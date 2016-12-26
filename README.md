@@ -1,4 +1,4 @@
-reudx-async-action-unit-test [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
+reudx-async-action-unit-test [![Build Status](https://travis-ci.org/timmyLan/redux-async-action-unit-test.svg?branch=master)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
 ===
 如果觉得redux async action单元测试难以入手,不妨尝试本文方法.
 
@@ -466,7 +466,7 @@ node_js: '6' #nodeJs版本
 sudo: true
 cache: yarn #yarn缓存目录 $HOME/.yarn-cache
 ```
-可以到 [http://shields.io/](http://shields.io/) 制作属于该项目的小图标 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
+若项目通过可得到属于该项目的小图标 [![Build Status](https://travis-ci.org/timmyLan/redux-async-action-unit-test.svg?branch=master)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
 
 项目地址
 ---
