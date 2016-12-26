@@ -1,4 +1,4 @@
-reudx-async-action-unit-test
+reudx-async-action-unit-test [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/timmyLan/redux-async-action-unit-test)
 ===
 如果觉得redux async action单元测试难以入手,不妨尝试本文方法.
 
